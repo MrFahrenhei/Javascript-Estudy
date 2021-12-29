@@ -21,3 +21,11 @@ My Complete path with Javascript (with other languages)
   
   </strong>
 </p>
+
+<p align="left">
+  💼 IDE/Tools: <strong>
+  
+  ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-333333?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)
+  
+  </strong>
+</p>
