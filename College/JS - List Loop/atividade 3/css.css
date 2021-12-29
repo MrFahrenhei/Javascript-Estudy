@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.header{
+    background-color: #173f5f;
+    overflow: hidden;
+    color:#f2f2f2;
+    text-align: center;
+}
+.header p {
+    float: left;
+    color: #f2f2f2;
+    padding: 3% 0% 1% 15%;
+    text-decoration: none;
+    font-size: 17px;
+  }
+form{
+    border-radius: 5px;
+    width: 50%;
+    margin:10% 0% 10% 25%;
+    padding: 2% 5% 5% 5%;
+    background-color:#173f5f;
+}
+
+#texto{
+    background-color: white;
+    padding: 0;
+    margin:1%;   
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+spam {
+    border-radius: 5px;
+    background-color: #f6d55c; 
+    border: none;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    float: right;
+}

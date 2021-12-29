@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>Questão 6 HTML+JS</Title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Atividade de algoritimo e lógica de programação</h1>
+                <p>Professor: Andre Helena</p>
+                <p>Turma: A</p>
+                <p>Aluno: Vinícius Valle Beraldo</p>
+            </header>
+            <form>
+                <div class="group">
+                    <label>Potenciação</label>
+                    <input type="text" id="numPar" class="control" placeholder="Digite um número maior que zero"><br>
+                    <input type="buttom" onClick="parr()" Value="Calcular se é par">
+                    <input type="buttom" onClick="imparr()" Value="Calcular se é impar">
+                    <input type="buttom" onClick="multiploDe()" Value="multiplo de 5">
+                    <button type="submit" id="result">Seu numero</button>
+                    <button type="submit" id="result1">Resultado</button><hr>
+                </div>
+            </form>
+        </div>
+    </body>
+
+
+<script>
+    function parr(){
+        let resultad;
+        let par = document.getElementById("numPar").value;
+        let nuPar = (par % 2);
+        if(nuPar == 0) {
+            resultad = "é Par";
+        } else {
+            resultad = "não é par"
+        }
+        if  (par <= 0) {
+        alert("tem que ser maior que zero");
+        }
+        document.getElementById("result1").innerHTML = resultad;
+        document.getElementById("result").innerHTML = par;
+    } 
+    function imparr(){
+        let resultad;
+        let par = document.getElementById("numPar").value;
+        let nuPar = (par % 2);
+        if(nuPar != 0) {
+            resultad = "é impar";
+        } else {
+            resultad = "não é impar";
+        }
+        if  (par <= 0) {
+        alert("tem que ser maior que zero");
+        }
+        document.getElementById("result1").innerHTML = resultad;
+        document.getElementById("result").innerHTML = par;
+    }  
+    function multiploDe(){
+        let resultad
+        let num2 = document.getElementById("numPar").value;
+        let mod = num2 % 5;
+            if (mod == 0){
+                resultad = "é multiplo de 5 ";
+            } else {
+                resultad = "não é multiplo de 5";
+            }
+            if (num2 <= 0) {
+                alert("tem que ser maior que zero");
+            }
+        document.getElementById("result1").innerHTML = resultad;
+        document.getElementById("result").innerHTML = num2;
+    }  
+
+</script>
+</html>

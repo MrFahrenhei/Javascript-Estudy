@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- ******* link java e css ******* -->
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js" defer></script>
+
+		<title>Terça</title>
+	</head>
+
+	<body>
+
+		<div class="header">
+			<h1>2 TRABALHO 2°BIMESTRE</h1>
+			<p>Professor: Helena</p>
+            <p>Turma: A</p>
+            <p>Aluno: Daniel da Silva Carneiro</p>
+		</div>
+
+
+		<br><br>
+		<div class="main">
+			<p class="pergunta">
+				3 - Calculadora para matrizes ou Multiplicação de matrizes: A multiplicação de duas matrizes A e B só é possível se o número de colunas da matriz A for igual ao número de linhas da matriz B. Assim, se A é uma matriz m x n e B, uma matriz N x P, a multiplicação será possível e o produto será uma matriz C, M x P.
+			</p>
+
+			<div class="tabela1" >
+				<select id="select" name="teste">
+					<option>Janeiro</option>
+					<option>Fevereiro</option>
+					<option>Março</option>
+					<option>Abril</option>
+					<option>Maio</option>
+					<option>Junho</option>
+					<option>Julho</option>
+					<option>Agosto</option>
+					<option>Setembro</option>
+					<option>Outubro</option>
+					<option>Novembro</option>
+					<option>Dezembro</option>
+				</select>
+			</div>
+
+			<div class="tabela" >
+				<input type="number" id="q1">
+				Quantidade de M1
+				</input>
+				<br>
+				<input type="number" id="q2">
+				Quantidade de M2
+				</input>
+			</div>
+
+
+			<br>
+			<div>
+				<button onclick="Calcular()">
+					Calcular
+				</button>
+				<button onclick="Cadastrar()">
+					Cadastrar
+				</button>
+			</div>
+			<br><br><br>
+
+			<div class="tabela" >
+				<table>
+					<tr>
+						<th class="borda" ></th>
+						<th class="bordaCOR" >M 1</th>
+						<th class="bordaCOR" >M 2</th>
+					</tr>
+					<tr>
+						<th class="meses" >Janeiro</th>
+						<td class="m1" >30</td>
+						<td class="m2" >20</td>
+					</tr>
+					<tr>
+						<th class="meses" >Fevereiro</th>
+						<td class="m1" >5</td>
+						<td class="m2" >20</td>
+					</tr>
+					<tr>
+						<th class="meses" >Março</th>
+						<td class="m1" >7</td>
+						<td class="m2" >15</td>
+					</tr>
+					<tr>
+						<th class="meses" >Abril</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Maio</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Junho</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Julho</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Agosto</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Setembro</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Outubro</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Novembro</th>
+						<td class="m1" ></td>
+						<td class="m2" ></td>
+					</tr>
+					<tr>
+						<th class="meses" >Dezembro</th>
+						<td class="m1" >18</td>
+						<td class="m2" >25</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="tabela" >
+				<table>
+					<tr>
+						<th class="borda" ></th>
+						<th class="bordaCOR" >Custo</th>
+						<th class="bordaCOR" >Lucro</th>
+					</tr>
+					<tr>
+						<th>M 1</th>
+						<td class="custoM" >10</td>
+						<td class="lucroM" >3</td>
+					</tr>
+					<tr>
+						<th>M 2</th>
+						<td class="custoM" >15</td>
+						<td class="lucroM" >2</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<div class="tabela" >
+				<table>
+					<tr>
+						<th class="borda" ></th>
+						<th class="bordaCOR" >Custo</th>
+						<th class="bordaCOR" >Lucro</th>
+					</tr>
+					<tr>
+						<th>Janeiro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Fevereiro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Março</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Abril</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Maio</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Junho</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Julho</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Agosto</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Setembro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Outubro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Novembro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+					<tr>
+						<th>Dezembro</th>
+						<td class="custo" ></td>
+						<td class="lucro" ></td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+
+
+	</body>
+
+	</html>

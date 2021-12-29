@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade em Javascript do Professor Helena</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Atividade de algoritimo e lógica de programação</h1>
+            <p>Professor: Andre Helena</p>
+            <p>Turma: A</p>
+            <p>Aluno: Vinícius Valle Beraldo</p>
+        </header>
+        <br><hr><br>
+        <label>1) Supondo que a população de um país A seja da ordem de 80000 habitantes com uma
+            taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com
+            uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número
+            de anos necessários para que a população do país A ultrapasse ou iguale a população
+            do país B, mantidas as taxas de crescimento.</label><br>
+            <spam type="buttom" onClick="calcu()">Resultado</spam><br>
+            <spam type="submit" id="result"></spam><br><hr><br>
+            
+        <label>2) O cardápio de uma lanchonete é o seguinte:</label>
+        <table>
+            <tr>
+                <th>Escolha</th>
+                <th>Especificação</th>
+                <th>Código</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="100" value="A" /></th>
+                <th>Cachorro quente</th>
+                <th>100</th>
+                <th>1,20</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="101" value="B" /></th>
+                <th>Bauru Simples</th>
+                <th>101</th>
+                <th>1,30</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="102" value="C" /></th>
+                <th>Bauru com Ovo</th>
+                <th>102</th>
+                <th>1,50</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="103" value="D" /></th>
+                <th>Hambúrguer</th>
+                <th>103</th>
+                <th>1,20</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="104" value="E" /></th>
+                <th>Cheeseburguer</th>
+                <th>104</th>
+                <th>1,30</th>
+            </tr>
+            <tr>
+                <th><input type="radio" name="pedido" id="105" value="F" /></th>
+                <th>Refrigerante</th>
+                <th>105</th>
+                <th>1,00</th>
+            </tr>
+            <tr>
+                <th colspan="2">Quantidade:</th>
+                <th colspan="2"><input type="text" id="quant" class="control" placeholder="Quantidade"/></th>
+            </tr>
+        </table>
+        <label>&emsp;Faça um programa que leia o código dos itens pedidos e as quantidades desejadas. Calcule e
+            mostre o valor a ser pago por item (preço * quantidade) e o total geral do pedido. Considere
+            que o cliente deve informar quando o pedido deve ser encerrado.</label><br>
+            <button type="submit" id="botao" class="botao" onClick="resta()">Verificar Respostas</button><br>
+            <spam type="submit" id="result2"></spam><br><hr><br>
+            <spam type="submit" id="result3"></spam><br><hr><br>
+    </body>
+</html>
+<script>
+    function calcu(){
+    let popuA = 80000;
+    let popuB = 200000;
+    const crescA = 0.03;
+    const crescB = 0.015;
+    let anos = 0;
+
+        while(popuA < popuB){
+            popuA = popuA+(popuA*crescA);
+            popuB = popuB+(popuB*crescB);
+            anos++;
+        }
+        if (popuA>=popuB){
+            document.getElementById("result").innerHTML = anos + " anos"
+        }
+    }
+</script>
+<script>
+    function resta(){
+        let rest;
+        var pedido = [];
+        var ide = [];
+        let quant = parseFloat(document.getElementById("quant").value);
+        if (document.querySelector("input[id='100']:checked")) {
+        count = ide.push(1.20);
+        count = pedido.push(1);
+        }
+        if (document.querySelector("input[id='101']:checked")) {
+        count = ide.push(1.30);
+        count = pedido.push(1);
+        }
+        if (document.querySelector("input[id='102']:checked")) {
+        count = ide.push(1.50);
+        count = pedido.push(1);
+        }
+        if (document.querySelector("input[id='103']:checked")) {
+        count = ide.push(1.20);
+        count = pedido.push(1);
+        }
+        if (document.querySelector("input[id='104']:checked")) {
+        count = ide.push(1.30);
+        count = pedido.push(1);
+        }
+        if (document.querySelector("input[id='105']:checked")) {
+        count = ide.push(1.00);
+        count = pedido.push(1);
+        }
+        if (quant == 0 ){ 
+            document.getElementById("result2").innerHTML = pedido.length + "pedidos";
+        }
+        if (quant >= 1){
+            var preco = ide*quant;
+            ide++; 
+            document.getElementById("result2").innerHTML = (pedido.length*quant) + " pedidos";
+            document.getElementById("result3").innerHTML = preco + " Reais";
+            { break; }
+        }
+         
+    }
+</script>

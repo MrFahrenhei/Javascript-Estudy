@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prova Bimestral - Algorítimos</title>
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="css.css">
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Prova Bimestral <span style="color: #ffa31a;">Js + HTML(CSS)</span></h1>
+            <p>Professor: Helena</p>
+            <p>Turma: A</p>
+            <p>Aluno: Vinícius Valle Beraldo</p>
+        </header>
+            <form id="form1"><br><br>
+                    <label>&emsp;Fazer um programa para corrigir provas de múltipla escolha. Cada prova tem 10
+                    questões, cada questão valendo um ponto. O primeiro conjunto de dados a ser
+                    lido será o gabarito para a correção da prova. Os outros dados, a serem lidos
+                    serão suas respectivas respostas, sendo que a turma possui 15 alunos.
+                    Considerando que cada questão correta vale um ponto, o algoritmo deverá
+                    calcular e imprimir (Obs.: utilizar classes e vetor nesse exercício):
+                    a) Para cada aluno, o seu número e sua nota;</label><br><br>
+                <form class="item">
+                    <label>ID do Aluno:</label>
+                    <input type="text" id="id" name="id" placeholder="ID do Aluno(a)">
+                    <label>Nome do Aluno(a):</label>
+                    <input type="text" id="name" name="Nome" placeholder="Nome do Aluno(a)"><br>
+                    <spam type="submit" id="result1">Aluno: </spam><hr>
+                    <spam type="submit" id="result2">Nota final:</spam><hr><br><br>
+                </form>
+                <ul class="container">
+                    <label>1)Pergunta 1st</label>
+                    <li class="item">
+                        <input type="radio" name="question-1-answers" id="qA" value="A1" />
+                        <label>A)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-1-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-1-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-1-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-1-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>2)Segunda pergunta</label>
+                    <li class="item">
+                        <input type="radio" name="question-2-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-2-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-2-answers" id="qC" value="C2" />
+                        <label>C)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-2-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-2-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+               <ul class="container">
+                    <label>3)Pergunta de número 3</label>
+                    <li class="item">
+                        <input type="radio" name="question-3-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-3-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-3-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-3-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-3-answers" id="qE" value="E3" />
+                        <label>E)Acerto</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>4)Pergunta IV</label>
+                    <li class="item">
+                        <input type="radio" name="question-4-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-4-answers" id="qB" value="B4" />
+                        <label>B)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-4-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-4-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-4-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>5)Pergunta de quinta</label>
+                    <li class="item">
+                        <input type="radio" name="question-5-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-5-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-5-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-5-answers" id="qD" value="D5" />
+                        <label>D)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-5-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>6)Pergunta meio besta</label>
+                    <li class="item">
+                        <input type="radio" name="question-6-answers" id="qA" value="A6" />
+                        <label>A)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-6-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-6-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-6-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-6-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+               <ul class="container">
+                    <label>7)Pergunta Aleluia irmãos</label>
+                    <li class="item">
+                        <input type="radio" name="question-7-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-7-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-7-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-7-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-7-answers" id="qE" value="E7" />
+                        <label>E)Acerto</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>8)Pergunta Otcho</label>
+                    <li class="item">
+                        <input type="radio" name="question-8-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-8-answers" id="qB" value="B8" />
+                        <label>B)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-8-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-8-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-8-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>9)Pergunta nain</label>
+                    <li class="item">
+                        <input type="radio" name="question-9-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-9-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-9-answers" id="qC" value="C" />
+                        <label>C)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-9-answers" id="qD" value="D9" />
+                        <label>D)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-9-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+                <ul class="container">
+                    <label>10)Pergunta des</label>
+                    <li class="item">
+                        <input type="radio" name="question-10-answers" id="qA" value="A" />
+                        <label>A)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-10-answers" id="qB" value="B" />
+                        <label>B)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-10-answers" id="qC" value="C10" />
+                        <label>C)Acerto</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-10-answers" id="qD" value="D" />
+                        <label>D)Erro</label>
+                    </li>
+                    <li class="item">
+                        <input type="radio" name="question-10-answers" id="qE" value="E" />
+                        <label>E)Erro</label>
+                    </li>
+                </ul>
+            </form>
+            <button type="submit" id="confirmed" onclick="adir()" value="submit">Finalizar Prova</button>
+    </body>
+</html>

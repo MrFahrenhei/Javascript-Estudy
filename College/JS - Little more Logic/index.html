@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>Segunda lista HTML+JS</Title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+    <div class="container">
+        <header class="header">
+            <h1>Atividade de algoritimo e lógica de programação</h1>
+            <p>Professor: Andre Helena</p>
+            <p>Turma: A</p>
+            <p>Aluno: Vinícius Valle Beraldo</p>
+        </header>
+        <form>
+            <div class="group">
+                <label>Potenciação</label>
+                <input type="text" id="base" class="control" placeholder="Escreva a base"/><br>
+                <input type="text" id="expo" class="control" placeholder="Escreva a expoente"/>
+                <input type="buttom" onClick="potenc()" Value="Calcular">
+                <button type="submit" id="result">Resultado</button><hr>
+
+                <label>Soma de 20 números inteiros positivos e quantos negativos</label>
+                <input type="text" id="a1" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a2" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a3" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a4" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a5" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a6" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a7" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a8" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a9" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a10" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a11" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a12" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a13" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a14" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a15" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a16" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a17" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a18" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a19" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="text" id="a20" class="control" placeholder="Escreva algum algarismo"/><br>
+                <input type="buttom" onClick="vinteinteiro()" id="submit" value="Calcular">
+                <button type="submit" id="result1">Resultado</button>
+                <button type="submit" id="result11">Resultado</button><hr>
+                
+                <label>Escreva um número inteiro positivo e mostre o seu fatorial</label>
+                <input type="text" id="posit" class="control" placeholder="Escreva algum algarismo"/>
+                <input type="buttom" onClick="factorialize()" id="submit" value="Calcular">
+                <button type="submit" id="result2">Resultado</button><hr>
+
+                <label>Primeiros 20 numeros de fibonacci</label>
+                
+                <button type="submit" id="result3">Resultado</button><hr>
+
+                <label>Urna eletrônica</label>
+                <div class="tabela">
+                    <h2>Escolha o candidato</h2>
+                    <div class="row">
+                        <h1 class="column">1 Jailson M.</h1>
+                        <h1 class="column">2 The rock</h1>
+                        <h1 class="column">3 Érick Jacquin</h1>
+                        <h1 class="column">4 Karl Marx</h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="column">17</h1>
+                        <h2 class="column">13</h1>
+                        <h2 class="column">24</h1>
+                        <h2 class="column">88</h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="column">partido Comunista ☭</h1>
+                        <h2 class="column">partido republicanos</h1>
+                        <h2 class="column">partido liberal</h1>
+                        <h2 class="column">partido Democratico</h1>
+                    </div>
+                    <div class="row">
+                    <input type="text" id="candidato" class="control" placeholder="Digite o número do seu candidato"><br>
+                    
+                    </div>
+                    <input type="buttom" onClick="urna()"  id="submit" value="Votar">
+                    <button type="submit" id="result4">Resultado</button>
+                    <input type="buttom" onClick="nulo()" id="submit" value="Votar Branco">
+                    <br>
+                </div><hr>
+                
+                <label>Início e fim e como os valores mudam</label>
+                <input type="text" id="ini" class="control" placeholder="Escreva o início"/><br>
+                <input type="text" id="fim" class="control" placeholder="Escreva o fim"/>
+                <input type="buttom" onClick="iniFim()" Value="Calcular">
+                <button type="submit" id="result6">Resultado</button><hr>
+
+                <label>Números primos entra 1 e 1000</label>
+                <input type="button" onClick="numPrimo()" value="calcular">
+                <button type="submit" id="result7">Resultado</button><hr>
+
+                <label>Prefeitura</label>
+                <input type="text" id="sálario1" class="control" placeholder="Escreva o primeiro salário"/><br>
+                <input type="text" id="sálario2" class="control" placeholder="Escreva o primeiro salário"/><br>
+                <input type="text" id="sálario3" class="control" placeholder="Escreva o primeiro salário"/><br>
+                <input type="text" id="sálario4" class="control" placeholder="Escreva o primeiro salário"/><br>
+                <input type="button" onClick="prefeitura()" value="Mostrar">
+                <button type="submit" id="abaixo"></button>
+                <button type="submit" id="acima"></button>
+                <button type="submit" id="acima2"></button>
+                <button type="submit" id="result8">Resultado</button><hr>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
+<script>
+    function potenc(){
+        base = document.getElementById("base").value;
+        expo = document.getElementById("expo").value;
+        var expoente = Math.pow(base, expo);
+        document.getElementById("result").innerHTML = expoente;
+    }
+</script>
+<script>
+    function vinteinteiro(){
+            let numPos = [];
+            let numNeg = [];
+            let a1 = parseFloat(document.getElementById("a1").value); if(a1 >0){numPos.push(a1) } else {numNeg.push(a1);}  
+            let a2 = parseFloat(document.getElementById("a2").value); if(a2 >0){numPos.push(a2) } else {numNeg.push(a2);}  
+            let a3 = parseFloat(document.getElementById("a3").value); if(a3 >0){numPos.push(a3) } else {numNeg.push(a3);}  
+            let a4 = parseFloat(document.getElementById("a4").value); if(a4 >0){numPos.push(a4) } else {numNeg.push(a4);}  
+            let a5 = parseFloat(document.getElementById("a5").value); if(a5 >0){numPos.push(a5) } else {numNeg.push(a5);}  
+            let a6 = parseFloat(document.getElementById("a6").value); if(a6 >0){numPos.push(a6) } else {numNeg.push(a6);}  
+            let a7 = parseFloat(document.getElementById("a7").value); if(a7 >0){numPos.push(a7) } else {numNeg.push(a7);}  
+            let a8 = parseFloat(document.getElementById("a8").value); if(a8 >0){numPos.push(a8) } else {numNeg.push(a8);}  
+            let a9 = parseFloat(document.getElementById("a9").value); if(a9 >0){numPos.push(a9) } else {numNeg.push(a9);}  
+            let a10 = parseFloat(document.getElementById("a10").value); if(a10 >0){ numPos.push(a10) } else { numNeg.push(a10);} 
+            let a11 = parseFloat(document.getElementById("a11").value); if(a11 >0){ numPos.push(a11) } else { numNeg.push(a11);} 
+            let a12 = parseFloat(document.getElementById("a12").value); if(a12 >0){ numPos.push(a12) } else { numNeg.push(a12);} 
+            let a13 = parseFloat(document.getElementById("a13").value); if(a13 >0){ numPos.push(a13) } else { numNeg.push(a13);} 
+            let a14 = parseFloat(document.getElementById("a14").value); if(a14 >0){ numPos.push(a14) } else { numNeg.push(a14);} 
+            let a15 = parseFloat(document.getElementById("a15").value); if(a15 >0){ numPos.push(a15) } else { numNeg.push(a15);} 
+            let a16 = parseFloat(document.getElementById("a16").value); if(a16 >0){ numPos.push(a16) } else { numNeg.push(a16);} 
+            let a17 = parseFloat(document.getElementById("a17").value); if(a17 >0){ numPos.push(a17) } else { numNeg.push(a17);} 
+            let a18 = parseFloat(document.getElementById("a18").value); if(a18 >0){ numPos.push(a18) } else { numNeg.push(a18);} 
+            let a19 = parseFloat(document.getElementById("a19").value); if(a19 >0){ numPos.push(a19) } else { numNeg.push(a19);} 
+            let a20 = parseFloat(document.getElementById("a20").value); if(a20 >0){ numPos.push(a20) } else { numNeg.push(a20);} 
+
+            let plusplus = 0;
+            for (let i=0; i<numPos.length; i++) {
+                plusplus+=numPos[i];
+            }   
+            document.getElementById("result1").innerHTML = "Soma de todos os valors "+plusplus;
+            document.getElementById("result11").innerHTML = "quantidade de valors negativos "+numNeg.length;
+            if (plusplus == 0 && numNeg.length == 20){
+                document.getElementById("result1").innerHTML = "Não tem valor";
+                document.getElementById("result11").innerHTML = "Não tem valor";
+            }
+            
+        }
+</script>
+<script>
+    function factorialize(){
+        var facto = document.getElementById("posit").value;
+        var result = facto;
+        for (var i = 1; i < facto; i++) {
+            result *= i;
+        }
+        document.getElementById("result2").innerHTML = result;
+             } 
+</script>
+<script>
+        var fibonacci_series = function (n) 
+        { if (n===1) {
+        return [0, 1];
+        } else {
+        var s = fibonacci_series(n - 1);
+        s.push(s[s.length - 1] + s[s.length - 2]);
+        return s;
+        }
+        };
+        document.getElementById("result3").innerHTML = fibonacci_series(20);
+</script>
+<script>
+    function urna(){
+        let rezultado;
+        let partido;
+        let presunto = document.getElementById("candidato").value;
+            if (presunto == 17){    
+                rezultado = "Você votou no Candidato Jailson M. ";
+                partido = "partido Comunista ☭";
+            }
+             if (presunto == 13){
+                rezultado = "Você votou no The rock ";
+                partido = "partido republicano";
+            }
+             if (presunto == 24){
+                rezultado = "Você votou no Érick Jacquin ";
+                partido = "partido liberal";
+            }
+             if (presunto == 88){
+                rezultado = "Você votou no Karl Marx do ";
+                partido = "partido democrata";
+            }
+             if (presunto != 17 && presunto != 13 && presunto != 24 && presunto != 88){
+                rezultado = "Voto nulo ";
+                partido = "";
+            }
+            
+        document.getElementById("result4").innerHTML = rezultado+partido;    
+        document.getElementById("result4").innerHTML = rezultado+partido; 
+    }
+    function nulo(){
+        document.getElementById("result4").innerHTML = "Você votou branco"; 
+    }
+</script>
+<script>
+    function iniFim() {
+          let ini = parseInt(document.getElementById("ini").value);
+          let fim = parseInt(document.getElementById("fim").value);
+
+          if (fim < ini) {
+            document.getElementById("result6").innerHTML = "O número maior é menor que o menor número";
+          } else {
+            while (ini <= fim) {
+                document.getElementById("result6").innerHTML = ini;
+              ini++;
+            }
+          }
+        }
+</script>
+ <script>
+ /*      
+    function numPrimo() {
+          let numero = parseInt(document.getElementById("nada").value);
+          let resposta = document.getElementById("result7");
+          let divisores = 0;
+
+          for (let count = 1; count <= numero; count++)
+            if (numero % count == 0) divisores++;
+
+          if (divisores == 2) resposta.innerHTML = "É primo";
+          else resposta.innerHTML = "Não é primo";
+        }
+
+        function numPrimo() {
+          let index = 1;
+          let retorno = false;
+
+          for (index = 1; index <= 1000; index++) {
+            retorno = isPrimo(index);
+            if (retorno) {
+                document.getElementById("result7").innerHTML = index;
+            }
+          }
+        }
+
+        function isPrimo(num) {
+          for (let i = 2; i < num; i++)
+            if (num % i === 0) {
+              return false;
+            }
+          return num > 1;
+        }
+ */     
+        function numPrimo(){
+            for (var counter = 0; counter <= 1000; counter++) {
+            var notPrime = false;
+            for (var i = 2; i <= counter; i++) {
+            if (counter%i===0 && i!==counter) {
+                notPrime = true;
+            }
+            }
+            if (notPrime === false) {
+                document.getElementById("result7").innerHTML = counter;
+            }
+            }   
+        }
+</script>
+<script>
+    function prefeitura() {
+        let prefetu;
+        let s1 = parseInt(document.getElementById("sálario1").value);
+        let s2 = parseInt(document.getElementById("sálario2").value);
+        let s3 = parseInt(document.getElementById("sálario3").value);
+        let s4 = parseInt(document.getElementById("sálario4").value);
+        let doisconto = [];
+        let umconto = [];
+        let meioumconto = [];
+        if (s1 < 1000) { umconto.push(s1);}
+        if (s2 < 1000) { umconto.push(s2);}
+        if (s3 < 1000) {umconto.push(s3);}
+        if (s4 < 1000) {umconto.push(s4);}
+        if (s1 >= 1000) {meioumconto.push(s1);}
+        if (s2 >= 1000) {meioumconto.push(s2);}
+        if (s3 >= 1000) {meioumconto.push(s3);}
+        if (s4 >= 1000) {meioumconto.push(s4);}
+        if (s1 > 2000) {doisconto.push(s1);}
+        if (s2 > 2000) {doisconto.push(s2);}
+        if (s3 > 2000) {doisconto.push(s3);}
+        if (s4 > 2000) {doisconto.push(s4);}
+        document.getElementById("abaixo").innerHTML = "Existem " + umconto.length + " funcionários recebendo Abaixo de 1000 pila";
+        document.getElementById("acima").innerHTML = "Existem " + meioumconto.length + " funcionários recebendo Acima de 1000 pila";
+        document.getElementById("acima2").innerHTML = "Existem " + doisconto.length + " funcionários recebendo Acima de 2000 pila";
+        med = (s1 + s2 + s3 + s4) / 4;
+        alert("Foram entrevistados 4 funcionários");
+        if (s1 > s2 && s1 > s3 && s1 > s4) {
+            prefetu = "Primeiro Salário é o Maior";
+        } else if (s2 > s1 && s2 > s3 && s2 > s4) {
+            prefetu = "Segundo Salário é o Maior";
+        } else if (s3 > s1 && s3 > s2 && s3 > s4) {
+            prefetu = "Terceiro Salário é o Maior";
+        } else if (s4 > s1 && s4 > s2 && s4 > s3) {
+            prefetu = "Quarto Salário é o Maior";
+        }
+        document.getElementById("result8").innerHTML = prefetu
+    }
+</script>

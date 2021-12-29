@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Questão 12</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Atividade de algoritimo e lógica de programação</h1>
+            <p>Professor: Andre Helena</p>
+            <p>Turma: A</p>
+            <p>Aluno: Vinícius Valle Beraldo</p>
+        </header>
+        <form>
+            <div class="group">
+                <label>Banco de dados</label>
+                <div class="tabela2">
+                    <h2>Escolha a pessoa</h2>
+                    <div class="row">
+                        <h1 class="column">ID</h1>
+                        <h1 class="column">Sexo</h1>
+                        <h1 class="column">Idade</h1>
+                        <h1 class="column">Estado Civil</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">1</h1>
+                        <h1 class="column">Masculino</h1>
+                        <h1 class="column">24</h1>
+                        <h1 class="column">Viuvo</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">2</h1>
+                        <h1 class="column">Feminino</h1>
+                        <h1 class="column">80</h1>
+                        <h1 class="column">Solteiro</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">3</h1>
+                        <h1 class="column">Masculino</h1>
+                        <h1 class="column">45</h1>
+                        <h1 class="column">Casado</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">4</h1>
+                        <h1 class="column">Feminino</h1>
+                        <h1 class="column">65</h1>
+                        <h1 class="column">Divorciado</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">5</h1>
+                        <h1 class="column">Masculino</h1>
+                        <h1 class="column">30</h1>
+                        <h1 class="column">União Estável</h1>
+                    </div>
+                    <div class="row">
+                        <h1 class="column">6</h1>
+                        <h1 class="column">Feminino</h1>
+                        <h1 class="column">26</h1>
+                        <h1 class="column">outro</h1>
+                    </div>
+                    <input type="text" id="pessoa" placeholder="Escolha a pessoa"/><br>
+                    <input type="buttom" onClick="cpf()"  id="submit" value="Escolha a pessoa">
+                    <button type="submit" id="result">Resultado</button>
+                    <br>
+                </div>
+            </div> 
+        </form>
+    </div>       
+</body>
+</html>
+<script>
+    function cpf(){
+        let rezult;
+        var person = document.getElementById("pessoa").value;
+        if (person == 1){
+            rezult = "ID 1 Sexo: Masculino Idade: 24 Estado Civil: viúvo"
+        }
+        if (person == 2){
+            rezult = "ID 2 Sexo: Feminino Idade: 80 Estado Civil: solteiro"
+        }
+        if (person == 3){
+            rezult = "ID 3 Sexo: Masculino Idade: 45 Estado Civil: Casado"
+        }
+        if (person == 4){
+            rezult = "ID 4 Sexo: Feminino Idade: 65 Estado Civil: Divorciado"
+        }
+        if (person == 5){
+            rezult = "ID 5 Sexo: Masculino Idade: 30 Estado Civil: União Estável"
+        }
+        if (person == 6){
+            rezult = "ID 6 Sexo: Feminino Idade: 26 Estado Civil: outro"
+        }
+        if (person > 6){
+            rezult = "Pessoa não encontrada ou não existe"
+        }
+        document.getElementById("result").innerHTML = rezult;
+    }
+</script>
