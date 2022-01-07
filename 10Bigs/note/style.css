@@ -12,54 +12,55 @@ body {
   margin: 0;
   padding-top: 3rem;
 }
-.add{
+.add {
   background-color: #9ec862;
-  border:none;
+  border: none;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 3px;
-  position:fixed;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
 }
-.note{
+.note {
   background-color: #fff;
   height: 400px;
   width: 400px;
-  margin:20px;
+  margin: 20px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
 }
-.note .tools{
+.note .tools {
   background-color: #9ec862;
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
 }
 
-.note .tools button{
+.note .tools button {
   background-color: transparent;
   color: #fff;
-  border:none;
+  border: none;
   font-size: 1rem;
   margin-left: 0.5rem;
   cursor: pointer;
 }
-.note .main{
+.note .main {
   background-color: #fff;
   height: 400px;
   overflow: hidden;
   width: 100%;
 }
 
-.note textarea{
+.note textarea {
   outline: none;
   font-family: inherit;
   font-size: 1.2rem;
-  border:none;
+  border: none;
   height: 100%;
   width: 100%;
 }
 
-.note .hidden{
+.note .hidden {
   display: none;
 }
