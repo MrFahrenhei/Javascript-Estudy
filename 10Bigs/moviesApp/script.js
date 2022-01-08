@@ -17,9 +17,11 @@ async function getMovies(url){
     showMovies(respData.results);
 }
 function showMovies(movies){
+
     main.innerHTML = '';
+
     movies.forEach((movie) => {
-        const {poster_path, title, vote_average} = movie;
+        const {poster_path, title, vote_average, overview} = movie;
         const movieEl = document .createElement('div');
         movieEl.classList.add('movie');
 
@@ -31,7 +33,8 @@ function showMovies(movies){
             <div class="movie-info">
                 <h3>${title}</h3>
                 <span class="${getClassByRate(vote_average)}">${vote_average}</span>
-            </div>`;
+            </div>
+            <div class="overview"><h4>Resumo:</h4>${overview}</div>`;
 
         main.appendChild(movieEl);
     });
