@@ -10,7 +10,7 @@ const url = (city) =>
 async function getWeatherLocation(city){
     const respt = await fetch(url(city), {origin: "cors"});
     const respData = await respt.json();
-    
+    console.log(respData);
     addWeatherPage(respData);
 }
 
@@ -21,8 +21,10 @@ function addWeatherPage(data){
     weather.classList.add('weather');
 
     weather.innerHTML = `
-        <h2>${temp}ºC</h2>
-        <small>in ${search.value}</small>
+        <h2>
+        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" />
+        </h2>
+        <small>${data.weather[0].main}</small>
     `;
 
     main.innerHTML = "";
@@ -31,7 +33,7 @@ function addWeatherPage(data){
 }
 
 function KToC(K){
-    return (K - 273.15).toFixed(2);
+    return Math.floor(K - 273.15);
 }
 
 form.addEventListener('submit', (e) => {
