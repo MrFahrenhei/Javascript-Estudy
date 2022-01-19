@@ -1,4 +1,4 @@
-// Factory Function
+// Factory Function (first letter lowercase Camel Notation)
 function createCircle(radius){
     return {
         // radius: 1,
