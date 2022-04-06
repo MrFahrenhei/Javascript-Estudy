@@ -1,0 +1,20 @@
+{
+  "name": "oopjs",
+  "version": "1.0.0",
+  "description": "Projeto de estudo de orientação a objetos do js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrFahrenhei/Javascript-Estudy.git"
+  },
+  "author": "Vinícius Valle Beraldo",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MrFahrenhei/Javascript-Estudy/issues"
+  },
+  "homepage": "https://github.com/MrFahrenhei/Javascript-Estudy#readme"
+}
