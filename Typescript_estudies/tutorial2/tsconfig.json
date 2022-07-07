@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "js/",
+        "target": "ESNext",
+        "watch": true,
+        "lib": ["dom", "es2017"],
+        "noEmitOnError": true
+    }
+}
