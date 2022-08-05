@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rick Astley</title>
+    <!-- Meta Tags required for Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <link rel="apple-touch-icon" href="https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png?v=1566411949736">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1 style="color: green;">Rick Astley PWA</h1>
+    <p>Tutorial 100% profissional de uma tarde</p>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?loop=1" 
+        title="Not Rick Astley" 
+        frameborder="0" allow="gyroscope"
+        >
+
+    </iframe> 
+</body>
+<script>
+    window.addEventListener('load', () => {
+      registerSW();
+    });
+    async function registerSW() {
+      if ('serviceWorker' in navigator) {
+        try {
+          await navigator
+                .serviceWorker
+                .register('serviceworker.js');
+        }
+        catch (e) {
+          console.log('SW registration failed');
+        }
+      }
+    }
+ </script>
+</html>
