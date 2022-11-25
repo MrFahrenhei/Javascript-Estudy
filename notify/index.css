@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) { */
     .openUp {
       background-color: rebeccapurple;
       color: white;
@@ -16,8 +16,8 @@
       align-items: center;
       justify-content: center;
     }
-    .popup-container.active {
-         display: flex;
+    .active {
+        display: flex;
         z-index: 100;
         justify-content: flex-end;
         width: 100%;
@@ -34,8 +34,5 @@
       background-color: #fff;
       font-size: 0.8rem;
     }
-}
-.popup-container {
-      display: none;
-    }
+/* } */ 
 

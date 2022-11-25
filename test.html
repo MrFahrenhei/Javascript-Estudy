@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"><div id="container-list"></div></div>
+</body>
+<script>
+    let lista = {
+        "titulo":"produtos",
+        "nome":"Preço",
+        "endereco" : "endereco",
+        "produtos": {
+            "produto_name" : "livro",
+            "preco" : '123'
+        }
+    }
+
+    let container = document.getElementById("container");
+    let container_list = document.getElementById("container-list"); 
+
+    function init(){
+        let table = document.createElement("table");
+        table.innerHTML = `
+            <tr class="test">
+                <th>${lista.titulo}</th>
+                <th>${lista.nome}</th>
+            </tr>
+            <tr>
+                <th>${lista.produtos.produto_name}</th>
+                <th>${lista.produtos.preco}</th>
+            </tr>
+        `;
+        container.append(table);
+    }
+    init();
+</script>
+</html>

@@ -1,14 +1,14 @@
-const messages = [
+    const messages = [
     'App Number7',
     'Não esqueça de baixar nosso app'];
     
     const close = document.getElementById('close');
     const container = document.getElementById('container');
     const popup = document.getElementById('popup');
-    let term = sessionStorage.getItem('term');
     init();
 
     function init(){
+        console.log("Iniciou....")
         let storedTerm = sessionStorage.getItem('term');
         if(!storedTerm){
             storedTerm = 0;
@@ -18,15 +18,17 @@ const messages = [
     }
 
     function setMode(term){
+        console.log("Validando....");
         if(term == 0){
+            console.log("Session está vazia")
             createNotification();
         }else if(term == 1){
-            console.log("Tem coisa no termo");
+            console.log("Session está preenchida");
         }
     }
 
     function createNotification() {
-    container.classList.add('active');
+        container.classList.add('active');
         const notif = document.createElement("div");
     
         notif.innerHTML = `
@@ -37,10 +39,9 @@ const messages = [
     
         popup.appendChild(notif);
     
-        // setTimeout(() => {
-        //     container.remove();
-        //     }, 2000);
-    
+        //setTimeout(() => {
+        //   container.remove();
+        // }, 2000);
        }
         close.addEventListener('click', () => {
             removeNotification();
