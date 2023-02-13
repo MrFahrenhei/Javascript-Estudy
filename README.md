@@ -17,7 +17,7 @@ My Complete path with Javascript (with other languages)
 <p align="left">
   🦄 Main Language: <strong> 
   
-  ![Javascript](https://img.shields.io/badge/Javascript-ED8B00?style=for-the-badge&logo=javascript&logoColor=white) 
+  ![Cobol](https://img.shields.io/badge/Cobol-ED8B00?style=for-the-badge&logo=cobol&logoColor=white) 
     
   </strong>
 </p>
