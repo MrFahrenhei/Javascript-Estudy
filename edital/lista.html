@@ -1,0 +1,93 @@
+<script>
+    const lista = [{
+        "head": {
+            "titulo":"Livro - Bilíngue",
+            "editora":"Editora",
+            "price":"Preço"
+        },
+        "cat" : "Material Infantil",
+        "products" : [
+            {
+                "name": "Coleção Educação Infantil 3 Anos - 1º Semestre",
+                "editora": "CPB",
+                "price": "169,00"
+            },
+            {
+                "name": "Coleção Educação Infantil 3 Anos - 2º Semestre",
+                "editora": "CPB",
+                "price": "185,00"
+            }
+        ]
+    }];
+</script>
+
+<body>  
+    <div class="container" id="container">
+        <div class="header" id="header">
+            
+        </div>
+    </div>   
+</body>
+
+<script>
+    const container = document.getElementById('container');
+    const header = document.getElementById('header');
+
+    let total = lista[0].products.length;
+
+    function forTotal(){
+        for(let i = 0; i <= total; i++){ 
+            `<tr class="linha"  align="center">
+                <th class="coluna">${lista[0].products[i].name}</th>
+                <th class="coluna">${lista[0].products[i].editora}</th>
+                <th class="coluna">R$ ${lista[0].products[i].price}</th>    
+            </tr>`;
+        }
+    }
+
+    init();
+
+    function init(){
+        const el = document.createElement("table");
+
+        el.innerHTML = `
+            <tr class="linha"> 
+                <th class="coluna first">${lista[0].head.titulo}</th>
+                <th class="coluna first">${lista[0].head.editora}</th>
+                <th class="coluna first">${lista[0].head.price}</th> 
+            </tr>
+            <tr class="linha">
+                <th class="coluna" rowspan="5">${lista[0].cat}</th>
+            </tr>
+            ${forTotal()}    
+        `;
+        header.appendChild(el);
+    }
+    
+</script>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    table{
+        margin-top: 10%;
+        border: none;
+        border-collapse: collapse;
+        width:100%;
+    }
+    .container{
+        width: 50%;
+        margin-right:auto;
+        margin-left:auto;
+        
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+    }
+    .linha .first{
+        color: #EEEA46;
+        background-color:#03528E;
+    }
+
+</style>
