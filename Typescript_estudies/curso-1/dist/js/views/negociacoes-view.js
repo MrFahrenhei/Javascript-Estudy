@@ -1,5 +1,6 @@
-export class NegociacaoView {
-    template() {
+import { View } from "./view.js";
+export class NegociacaoView extends View {
+    template(model) {
         return `
         <table class="table table-hover table-bordered">
             <thead>
@@ -10,8 +11,19 @@ export class NegociacaoView {
                 </tr>
             </thead>
             <tbody>
+                ${model.lista().map(negociacao => {
+            return `
+                    <tr>
+                        <td>${this.formatar(negociacao.data)}</td>
+                        <td>${negociacao._quantidade}</td>
+                        <td>${negociacao._valor}</td>
+                    </tr>`;
+        }).join('')}
             </tbody>
         </table>
         `;
+    }
+    formatar(data) {
+        return new Intl.DateTimeFormat().format(data);
     }
 }
