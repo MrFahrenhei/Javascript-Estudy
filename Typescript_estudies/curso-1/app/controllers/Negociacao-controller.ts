@@ -12,7 +12,7 @@ export class NegociacaoController {
         this.inputQuantidade = document.querySelector('#quantidade');
         this.inputValor = document.querySelector('#valor');
     }
-
+    
     adiciona(): void{
         const negociacao = this.criarNegociacao();
         this.negociacoes.adiciona(negociacao);
